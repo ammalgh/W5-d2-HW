@@ -2,7 +2,7 @@
 //   --
 
 document.addEventListener('DOMContentLoaded', function() {
-    // الحصول على عناصر الصور المحددة
+   
     var logo = document.getElementById('logo');
     var heroContainer = document.getElementById('hero');
     var catNewImage = document.getElementById('catNew');

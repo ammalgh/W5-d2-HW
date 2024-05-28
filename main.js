@@ -22,15 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
       catNewImage.setAttribute('src', newCatNewImageSrc);
       console.log('Image source changed');
 
-      // تغيير النصوص
-      var headings = document.getElementsByTagName('section');
-      headings.forEach(function(heading) {
-        if (heading.textContent.includes('Dog')) {
-          heading.textContent = heading.textContent.replace('Dog', 'Cat');
-          console.log('Text changed:', heading.textContent);
-        } else {
-          console.log('No change needed for:', heading.textContent);
-        }
-      });
-    });
+
+  var elements = document.querySelectorAll('*');
+  elements.forEach(function(element) {
+      if (element.children.length === 0 && element.textContent.includes('Dog')) {
+          element.textContent = element.textContent.replace(/Dog/g, 'Cat');
+          console.log('Text changed:', element.textContent);
+      }
   });
+});
+});
+
+
+
+  // -------------------
+

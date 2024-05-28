@@ -1,0 +1,290 @@
+.rover-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e7e7e7;
+}
+.logo {
+    height: 40px;
+    width: auto;
+}
+.rover-header-left,
+.rover-header-right {
+    display: flex;
+    align-items: center;
+}
+.rover-header-left a,
+.rover-header-right a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.rover-header-left a:hover,
+.rover-header-right a:hover {
+    color: #0073e6;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+    .rover-header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rover-header-left,
+    .rover-header-right {
+        display: none;
+    }
+    .nav-bar {
+        display: block;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-content .dc-section {
+        padding: 10px;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown button {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+/* Laptop View */
+@media only screen and (min-width: 992px) {
+    .nav-bar {
+        display: none;
+    }
+    .rover-header-left,
+    .rover-header-right {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.rover-hero-container {
+    position: relative;
+    background-image: url('https://cdn.pixabay.com/photo/2018/04/23/14/38/dog-3344414_640.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.rover-hero-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.rover-hero-container p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .rover-hero-container {
+        padding: 60px 20px;
+    }
+    .rover-hero-container h1 {
+        font-size: 32px;
+    }
+    .rover-hero-container p {
+        font-size: 18px;
+    }
+}
+
+/* Middle Section */
+.rover-middle-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff; /* خلفية بيضاء */
+}
+.rover-middle-section h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Facts Section */
+.factandboxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+.rover-facts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+.rover-fact-indiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rover-fact-indiv img {
+    height: 40px;
+    width: 40px;
+}
+.rover-fact-indiv h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.rover-fact-indiv p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Information Section */
+.rover-cta-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.rover-cta-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.rover-cta-header img {
+    height: 40px;
+    width: 40px;
+}
+.rover-cta-header p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+.rover-cta-header .bold {
+    font-weight: bold;
+}
+.rover-facts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.rover-facts li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+.rover-facts .checkmark {
+    color: #28a745;
+    font-size: 16px;
+}
+.rover-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #28a745; /* لون أخضر */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.rover-cta:hover {
+    background-color: #218838; /* أخضر داكن */
+}
+.rover-protections {
+    font-size: 12px;
+    color: #666;
+    text-align: center; /* لضبط النص في الوسط */
+}
+.rover-protections a {
+    color: #0073e6;
+    text-decoration: none;
+}
+.rover-protections a:hover {
+    text-decoration: underline;
+}
+
+/* Rover Action Shot Section */
+.rover-action-shot {
+    position: relative;
+    text-align: left;
+    max-width: 800px;
+    margin: auto; /* لجعل العنصر في الوسط */
+}
+.rover-action-shot img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.rover-action-quote-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 300px; /* عرض المربع */
+    margin: -50px auto 0; /* يجعل المربع يتداخل مع الجزء السفلي من الصورة */
+    position: relative;
+    z-index: 10;
+    text-align: left;
+}
+.rover-action-quote-container .rover-action-dash {
+    margin-bottom: 10px;
+}
+.rover-action-quote-container .rover-quote {
+    font-size: 14px;
+    color: #333;
+}
+.rover-action-quote-container .rover-quote span {
+    font-weight: bold;
+}
+
+/* ---------- */
+.rover-123-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+.rover-123-container h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.rover-123-item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
